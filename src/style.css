@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Franklin';
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+img {
+    width: 80vw;
+}
+
+.ping-logo {
+    margin-top: 3em;
+}
+
+.main-title {
+    margin: 2em;
+}
+
+.main-title h1 {
+    color: hsl(0, 0%, 59%);
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+}
+
+.main-title span {
+    color: black;
+    font-weight: 600;
+}
+
+.main-title p {
+    color: hsl(209, 33%, 12%);
+    font-size: 0.7em;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.input-email {
+    padding: 1em;
+    border: solid 1px hsl(223, 87%, 63%);
+    border-radius: 2em;
+    width: 80vw;
+    padding-left: 2em;
+}
+
+.error {
+    border: solid 1px hsl(354, 100%, 66%);
+}
+
+.input-email::placeholder {
+    color: hsl(223, 100%, 88%);
+}
+
+.input-email:focus {
+    outline: none;
+    border-color: hsl(223, 87%, 63%);
+    transition: 0.5s;
+}
+
+.formulario small {
+    color: hsl(354, 100%, 66%);
+    font-style: italic;
+    font-size: 0.6em;
+    margin-top: 0.8em;
+    opacity: 0;
+}
+
+.form-error {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario #notify-button {
+    color: white;
+    font-family: 'Libre Franklin';
+    font-weight: 600;
+    background-color: hsl(223, 87%, 63%);
+    width: 80vw;
+    padding: 1em;
+    border-style: none;
+    border-radius: 2em;
+    margin: 1em;
+}
+
+.formulario #notify-button:hover {
+    background-color: hsl(223, 90%, 73%);
+    transition: 0.5s;
+}
+
+.dashboard-image {
+    margin: 0 0 4em;
+}
+
+.socialmedia-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 0 0 1em;
+}
+
+.socialmedia-icons svg {
+    width: 20px;
+}
+
+footer small {
+    color: hsl(0, 0%, 59%);
+    font-size: 0.5em;
+}
+
+@media only screen and (min-width: 768px) {
+    img {
+        width: 500px;
+    }
+
+    .main-title h1{
+        font-size: 2em
+    }
+
+    .formulario {
+        flex-direction: row;
+        margin-bottom: 2em;
+    }
+
+    .formulario small {
+        text-align: left;
+        margin-left: 2.5em;
+        font-size: 0.5em;
+    }
+
+    .formulario input {
+        width: 300px;
+    }
+
+    .formulario #notify-button {
+        margin-bottom: 2.5em;
+        width: 150px;
+    }
+}
